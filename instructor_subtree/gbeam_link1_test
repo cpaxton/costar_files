@@ -1,0 +1,23 @@
+name: gbeam_link1_test
+tree:
+  children:
+  - children: []
+    name: knowledge_test_0
+    save_info:
+      generator_info:
+        label: {field_name: Label, type: NamedField, value: ''}
+        name: {field_name: Name, type: NamedField, value: knowledge_test_0}
+        predicate: {value: link}
+        target: {value: gbeam_link_1}
+        value: {value: true}
+      name: knowledge_test_0
+      node_type: CONDITION
+      plugin_name: Knowledge Test
+  name: sequence_0
+  save_info:
+    generator_info:
+      label: {field_name: Label, type: NamedField, value: ''}
+      name: {field_name: Name, type: NamedField, value: sequence_0}
+    name: sequence_0
+    node_type: LOGIC
+    plugin_name: Sequence
