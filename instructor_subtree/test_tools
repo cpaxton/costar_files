@@ -1,0 +1,68 @@
+name: test_tools
+tree:
+  children:
+  - children:
+    - children:
+      - children: []
+        name: sleep_0
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_0}
+            wait: {field_name: Sleep Time, type: NamedField, value: '2'}
+          name: sleep_0
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: tool_on_0
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: tool_on_0}
+          name: tool_on_0
+          node_type: ACTION
+          plugin_name: Tool On
+      - children: []
+        name: sleep_1
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_1}
+            wait: {field_name: Sleep Time, type: NamedField, value: '2'}
+          name: sleep_1
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: tool_off_0
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: tool_off_0}
+          name: tool_off_0
+          node_type: ACTION
+          plugin_name: Tool Off
+      name: sequence_0
+      save_info:
+        generator_info:
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: sequence_0}
+        name: sequence_0
+        node_type: LOGIC
+        plugin_name: Sequence
+    name: repeat_0
+    save_info:
+      generator_info:
+        label: {field_name: Label, type: NamedField, value: ''}
+        name: {field_name: Name, type: NamedField, value: repeat_0}
+        repeat: {field_name: Repeat (-1) for infinity, type: NamedField, value: '-1'}
+      name: repeat_0
+      node_type: LOGIC
+      plugin_name: Repeat
+  name: root
+  save_info:
+    generator_info:
+      label: {field_name: Label, type: NamedField, value: ''}
+      name: {field_name: Name, type: NamedField, value: root}
+    name: root
+    node_type: LOGIC
+    plugin_name: Root
