@@ -1,0 +1,85 @@
+name: test smartmove
+tree:
+  children:
+  - children:
+    - children:
+      - children: []
+        name: plan_to_waypoint_0
+        save_info:
+          generator_info:
+            acc: {value: 0.75}
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: plan_to_waypoint_0}
+            vel: {value: 0.75}
+            waypoint_name: {value: calib--5}
+          name: plan_to_waypoint_0
+          node_type: ACTION
+          plugin_name: Plan to Waypoint
+      - children:
+        - children: []
+          name: detect_objects_0
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: detect_objects_0}
+              wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+            name: detect_objects_0
+            node_type: ACTION
+            plugin_name: Detect Objects
+        - children: []
+          name: update_scene_0
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: update_scene_0}
+              wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+            name: update_scene_0
+            node_type: ACTION
+            plugin_name: Update Scene
+        name: sequence_1
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sequence_1}
+          name: sequence_1
+          node_type: LOGIC
+          plugin_name: Sequence
+      - children: []
+        name: smart_move_0
+        save_info:
+          generator_info:
+            acc: {value: 0.75}
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: smart_move_0}
+            object: {value: node_uniform}
+            region: {value: right_of}
+            smartmove: {value: test_node_smartmove}
+            vel: {value: 0.75}
+          name: smart_move_0
+          node_type: ACTION
+          plugin_name: Smart Move
+      name: sequence_0
+      save_info:
+        generator_info:
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: sequence_0}
+        name: sequence_0
+        node_type: LOGIC
+        plugin_name: Sequence
+    name: repeat_0
+    save_info:
+      generator_info:
+        label: {field_name: Label, type: NamedField, value: ''}
+        name: {field_name: Name, type: NamedField, value: repeat_0}
+        repeat: {field_name: Repeat (-1) for infinity, type: NamedField, value: '-1'}
+      name: repeat_0
+      node_type: LOGIC
+      plugin_name: Repeat
+  name: root
+  save_info:
+    generator_info:
+      label: {field_name: Label, type: NamedField, value: ''}
+      name: {field_name: Name, type: NamedField, value: root}
+    name: root
+    node_type: LOGIC
+    plugin_name: Root
