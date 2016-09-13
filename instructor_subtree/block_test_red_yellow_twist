@@ -1,0 +1,552 @@
+name: block_test_red_yellow_twist
+tree:
+  children:
+  - children:
+    - children:
+      - children: []
+        name: publish_message_48
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: 001/robot/start_position}
+            name: {field_name: Name, type: NamedField, value: publish_message_48}
+            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+          name: publish_message_48
+          node_type: CONDITION
+          plugin_name: Publish Message
+      - children: []
+        name: sleep_92
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_92}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.15'}
+          name: sleep_92
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: move_to_waypoint_48
+        save_info:
+          generator_info:
+            acc: {value: 0.75}
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: move_to_waypoint_48}
+            vel: {value: 0.75}
+            waypoint_name: {value: block_start}
+          name: move_to_waypoint_48
+          node_type: ACTION
+          plugin_name: Move to Waypoint
+      - children: []
+        name: sleep_93
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_93}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_93
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: publish_message_49
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: 001/robot/to_red}
+            name: {field_name: Name, type: NamedField, value: publish_message_49}
+            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+          name: publish_message_49
+          node_type: CONDITION
+          plugin_name: Publish Message
+      - children: []
+        name: move_to_waypoint_49
+        save_info:
+          generator_info:
+            acc: {value: 0.75}
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: move_to_waypoint_49}
+            vel: {value: 0.75}
+            waypoint_name: {value: block_red_approach}
+          name: move_to_waypoint_49
+          node_type: ACTION
+          plugin_name: Move to Waypoint
+      - children: []
+        name: move_to_waypoint_50
+        save_info:
+          generator_info:
+            acc: {value: 0.75}
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: move_to_waypoint_50}
+            vel: {value: 0.75}
+            waypoint_name: {value: block_red_grasp}
+          name: move_to_waypoint_50
+          node_type: ACTION
+          plugin_name: Move to Waypoint
+      - children: []
+        name: sleep_94
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_94}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_94
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: publish_message_50
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: 001/red/grasp}
+            name: {field_name: Name, type: NamedField, value: publish_message_50}
+            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+          name: publish_message_50
+          node_type: CONDITION
+          plugin_name: Publish Message
+      - children: []
+        name: sleep_95
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_95}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_95
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: close_s_gripper_8
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: close_s_gripper_8}
+            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+          name: close_s_gripper_8
+          node_type: ACTION
+          plugin_name: Close S Gripper
+      - children: []
+        name: sleep_96
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_96}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_96
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: publish_message_51
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: 001/red/lift_twist}
+            name: {field_name: Name, type: NamedField, value: publish_message_51}
+            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+          name: publish_message_51
+          node_type: CONDITION
+          plugin_name: Publish Message
+      - children: []
+        name: sleep_97
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_97}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_97
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: move_to_waypoint_51
+        save_info:
+          generator_info:
+            acc: {value: 0.75}
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: move_to_waypoint_51}
+            vel: {value: 0.75}
+            waypoint_name: {value: block_red_twist}
+          name: move_to_waypoint_51
+          node_type: ACTION
+          plugin_name: Move to Waypoint
+      - children: []
+        name: sleep_98
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_98}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_98
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: publish_message_52
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: 001/red/put_down}
+            name: {field_name: Name, type: NamedField, value: publish_message_52}
+            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+          name: publish_message_52
+          node_type: CONDITION
+          plugin_name: Publish Message
+      - children: []
+        name: sleep_99
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_99}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_99
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: move_to_waypoint_52
+        save_info:
+          generator_info:
+            acc: {value: 0.75}
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: move_to_waypoint_52}
+            vel: {value: 0.75}
+            waypoint_name: {value: block_red_grasp}
+          name: move_to_waypoint_52
+          node_type: ACTION
+          plugin_name: Move to Waypoint
+      - children: []
+        name: sleep_100
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_100}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_100
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: publish_message_53
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: 001/red/release}
+            name: {field_name: Name, type: NamedField, value: publish_message_53}
+            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+          name: publish_message_53
+          node_type: CONDITION
+          plugin_name: Publish Message
+      - children: []
+        name: sleep_101
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_101}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_101
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: open_s_gripper_8
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: open_s_gripper_8}
+            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+          name: open_s_gripper_8
+          node_type: ACTION
+          plugin_name: Open S Gripper
+      - children: []
+        name: sleep_102
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_102}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_102
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: publish_message_54
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: 001/robot/to_yellow}
+            name: {field_name: Name, type: NamedField, value: publish_message_54}
+            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+          name: publish_message_54
+          node_type: CONDITION
+          plugin_name: Publish Message
+      - children: []
+        name: sleep_103
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_103}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_103
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: move_to_waypoint_53
+        save_info:
+          generator_info:
+            acc: {value: 0.75}
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: move_to_waypoint_53}
+            vel: {value: 0.75}
+            waypoint_name: {value: block_red_approach}
+          name: move_to_waypoint_53
+          node_type: ACTION
+          plugin_name: Move to Waypoint
+      - children: []
+        name: move_to_waypoint_54
+        save_info:
+          generator_info:
+            acc: {value: 0.75}
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: move_to_waypoint_54}
+            vel: {value: 0.75}
+            waypoint_name: {value: block_yellow_approach}
+          name: move_to_waypoint_54
+          node_type: ACTION
+          plugin_name: Move to Waypoint
+      - children: []
+        name: move_to_waypoint_55
+        save_info:
+          generator_info:
+            acc: {value: 0.75}
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: move_to_waypoint_55}
+            vel: {value: 0.75}
+            waypoint_name: {value: block_yellow_grasp}
+          name: move_to_waypoint_55
+          node_type: ACTION
+          plugin_name: Move to Waypoint
+      - children: []
+        name: sleep_104
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_104}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_104
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: publish_message_55
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: 001/yellow/grasp}
+            name: {field_name: Name, type: NamedField, value: publish_message_55}
+            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+          name: publish_message_55
+          node_type: CONDITION
+          plugin_name: Publish Message
+      - children: []
+        name: sleep_105
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_105}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_105
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: close_s_gripper_9
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: close_s_gripper_9}
+            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+          name: close_s_gripper_9
+          node_type: ACTION
+          plugin_name: Close S Gripper
+      - children: []
+        name: sleep_106
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_106}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_106
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: publish_message_56
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: 001/yellow/lift_twist}
+            name: {field_name: Name, type: NamedField, value: publish_message_56}
+            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+          name: publish_message_56
+          node_type: CONDITION
+          plugin_name: Publish Message
+      - children: []
+        name: sleep_107
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_107}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_107
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: move_to_waypoint_56
+        save_info:
+          generator_info:
+            acc: {value: 0.75}
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: move_to_waypoint_56}
+            vel: {value: 0.75}
+            waypoint_name: {value: block_yellow_twist}
+          name: move_to_waypoint_56
+          node_type: ACTION
+          plugin_name: Move to Waypoint
+      - children: []
+        name: sleep_108
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_108}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_108
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: publish_message_57
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: 001/yellow/put_down}
+            name: {field_name: Name, type: NamedField, value: publish_message_57}
+            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+          name: publish_message_57
+          node_type: CONDITION
+          plugin_name: Publish Message
+      - children: []
+        name: sleep_109
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_109}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_109
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: move_to_waypoint_57
+        save_info:
+          generator_info:
+            acc: {value: 0.75}
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: move_to_waypoint_57}
+            vel: {value: 0.75}
+            waypoint_name: {value: block_yellow_grasp}
+          name: move_to_waypoint_57
+          node_type: ACTION
+          plugin_name: Move to Waypoint
+      - children: []
+        name: sleep_110
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_110}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_110
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: publish_message_58
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: 001/yellow/release}
+            name: {field_name: Name, type: NamedField, value: publish_message_58}
+            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+          name: publish_message_58
+          node_type: CONDITION
+          plugin_name: Publish Message
+      - children: []
+        name: sleep_111
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_111}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_111
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: open_s_gripper_9
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: open_s_gripper_9}
+            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+          name: open_s_gripper_9
+          node_type: ACTION
+          plugin_name: Open S Gripper
+      - children: []
+        name: sleep_112
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_112}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_112
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: publish_message_59
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: 001/robot/above_yellow}
+            name: {field_name: Name, type: NamedField, value: publish_message_59}
+            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+          name: publish_message_59
+          node_type: CONDITION
+          plugin_name: Publish Message
+      - children: []
+        name: sleep_113
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_113}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_113
+          node_type: ACTION
+          plugin_name: Sleep
+      - children: []
+        name: move_to_waypoint_58
+        save_info:
+          generator_info:
+            acc: {value: 0.75}
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: move_to_waypoint_58}
+            vel: {value: 0.75}
+            waypoint_name: {value: block_yellow_approach}
+          name: move_to_waypoint_58
+          node_type: ACTION
+          plugin_name: Move to Waypoint
+      - children: []
+        name: sleep_114
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sleep_114}
+            wait: {field_name: Sleep Time, type: NamedField, value: '0.1'}
+          name: sleep_114
+          node_type: ACTION
+          plugin_name: Sleep
+      name: sequence_4
+      save_info:
+        generator_info:
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: sequence_4}
+        name: sequence_4
+        node_type: LOGIC
+        plugin_name: Sequence
+    name: repeat_4
+    save_info:
+      generator_info:
+        label: {field_name: Label, type: NamedField, value: ''}
+        name: {field_name: Name, type: NamedField, value: repeat_4}
+        repeat: {field_name: Repeat (-1) for infinity, type: NamedField, value: '-1'}
+      name: repeat_4
+      node_type: LOGIC
+      plugin_name: Repeat
+  name: root
+  save_info:
+    generator_info:
+      label: {field_name: Label, type: NamedField, value: ''}
+      name: {field_name: Name, type: NamedField, value: root}
+    name: root
+    node_type: LOGIC
+    plugin_name: Root
