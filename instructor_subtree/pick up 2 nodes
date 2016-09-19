@@ -3,368 +3,402 @@ tree:
   children:
   - children:
     - children:
-      - children: []
-        name: move_to_waypoint_0
-        save_info:
-          generator_info:
-            acc: {value: 0.75}
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: move_to_waypoint_0}
-            vel: {value: 0.75}
-            waypoint_name: {value: 00 HOME}
+      - children:
+        - children: []
           name: move_to_waypoint_0
-          node_type: ACTION
-          plugin_name: Move to Waypoint
-      - children: []
-        name: detect_objects_0
-        save_info:
-          generator_info:
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: detect_objects_0}
-            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
-          name: detect_objects_0
-          node_type: CONDITION
-          plugin_name: Detect Objects
-      - children: []
-        name: update_scene_0
-        save_info:
-          generator_info:
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: update_scene_0}
-            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
-          name: update_scene_0
-          node_type: CONDITION
-          plugin_name: Update Scene
-      - children: []
-        name: move_to_waypoint_1
-        save_info:
-          generator_info:
-            acc: {value: 0.75}
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: move_to_waypoint_1}
-            vel: {value: 0.75}
-            waypoint_name: {value: '001'}
-          name: move_to_waypoint_1
-          node_type: ACTION
-          plugin_name: Move to Waypoint
-      name: sequence_2
-      save_info:
-        generator_info:
-          label: {field_name: Label, type: NamedField, value: update scene}
-          name: {field_name: Name, type: NamedField, value: sequence_2}
-        name: sequence_2
-        node_type: LOGIC
-        plugin_name: Sequence
-    - children:
-      - children: []
-        name: smart_move_0
-        save_info:
-          generator_info:
-            acc: {value: 0.75}
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: smart_move_0}
-            object: {value: node_uniform}
-            reference: {value: world}
-            region: {value: right_of}
-            smartmove: {value: node-over}
-            vel: {value: 0.75}
-          name: smart_move_0
-          node_type: ACTION
-          plugin_name: Smart Move
-      - children: []
-        name: smart_move_1
-        save_info:
-          generator_info:
-            acc: {value: 0.75}
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: smart_move_1}
-            object: {value: node_uniform}
-            reference: {value: world}
-            region: {value: right_of}
-            smartmove: {value: node-pick}
-            vel: {value: 0.75}
-          name: smart_move_1
-          node_type: ACTION
-          plugin_name: Smart Move
-      - children: []
-        name: close_s_gripper_0
-        save_info:
-          generator_info:
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: close_s_gripper_0}
-            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
-          name: close_s_gripper_0
-          node_type: ACTION
-          plugin_name: Close S Gripper
-      name: sequence_3
-      save_info:
-        generator_info:
-          label: {field_name: Label, type: NamedField, value: pick up node}
-          name: {field_name: Name, type: NamedField, value: sequence_3}
-        name: sequence_3
-        node_type: LOGIC
-        plugin_name: Sequence
-    - children:
-      - children: []
-        name: smart_move_2
-        save_info:
-          generator_info:
-            acc: {value: 0.75}
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: smart_move_2}
-            object: {value: node_uniform}
-            reference: {value: world}
-            region: {value: right_of}
-            smartmove: {value: node-over}
-            vel: {value: 0.75}
-          name: smart_move_2
-          node_type: ACTION
-          plugin_name: Smart Move
-      - children: []
-        name: move_to_waypoint_2
-        save_info:
-          generator_info:
-            acc: {value: 0.75}
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: move_to_waypoint_2}
-            vel: {value: 0.75}
-            waypoint_name: {value: 01 place1}
-          name: move_to_waypoint_2
-          node_type: ACTION
-          plugin_name: Move to Waypoint
-      - children: []
-        name: move_to_waypoint_3
-        save_info:
-          generator_info:
-            acc: {value: 0.75}
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: move_to_waypoint_3}
-            vel: {value: 0.75}
-            waypoint_name: {value: 01 place2}
-          name: move_to_waypoint_3
-          node_type: ACTION
-          plugin_name: Move to Waypoint
-      - children: []
-        name: open_s_gripper_0
-        save_info:
-          generator_info:
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: open_s_gripper_0}
-            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+          save_info:
+            generator_info:
+              acc: {value: 0.75}
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: move_to_waypoint_0}
+              vel: {value: 0.75}
+              waypoint_name: {value: 00 HOME}
+            name: move_to_waypoint_0
+            node_type: ACTION
+            plugin_name: Move to Waypoint
+        - children: []
           name: open_s_gripper_0
-          node_type: ACTION
-          plugin_name: Open S Gripper
-      name: sequence_4
-      save_info:
-        generator_info:
-          label: {field_name: Label, type: NamedField, value: Place to position 01}
-          name: {field_name: Name, type: NamedField, value: sequence_4}
-        name: sequence_4
-        node_type: LOGIC
-        plugin_name: Sequence
-    name: sequence_1
-    save_info:
-      generator_info:
-        label: {field_name: Label, type: NamedField, value: Pick first node}
-        name: {field_name: Name, type: NamedField, value: sequence_1}
-      name: sequence_1
-      node_type: LOGIC
-      plugin_name: Sequence
-  - children:
-    - children:
-      - children: []
-        name: move_to_waypoint_4
-        save_info:
-          generator_info:
-            acc: {value: 0.75}
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: move_to_waypoint_4}
-            vel: {value: 0.75}
-            waypoint_name: {value: 00 HOME}
-          name: move_to_waypoint_4
-          node_type: ACTION
-          plugin_name: Move to Waypoint
-      - children: []
-        name: detect_objects_1
-        save_info:
-          generator_info:
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: detect_objects_1}
-            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
-          name: detect_objects_1
-          node_type: CONDITION
-          plugin_name: Detect Objects
-      - children: []
-        name: update_scene_1
-        save_info:
-          generator_info:
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: update_scene_1}
-            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
-          name: update_scene_1
-          node_type: CONDITION
-          plugin_name: Update Scene
-      - children: []
-        name: move_to_waypoint_5
-        save_info:
-          generator_info:
-            acc: {value: 0.75}
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: move_to_waypoint_5}
-            vel: {value: 0.75}
-            waypoint_name: {value: '001'}
-          name: move_to_waypoint_5
-          node_type: ACTION
-          plugin_name: Move to Waypoint
-      name: sequence_6
-      save_info:
-        generator_info:
-          label: {field_name: Label, type: NamedField, value: update scene}
-          name: {field_name: Name, type: NamedField, value: sequence_6}
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: open_s_gripper_0}
+              wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+            name: open_s_gripper_0
+            node_type: ACTION
+            plugin_name: Open S Gripper
+        - children: []
+          name: detect_objects_0
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: detect_objects_0}
+              wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+            name: detect_objects_0
+            node_type: CONDITION
+            plugin_name: Detect Objects
+        - children: []
+          name: update_scene_0
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: update_scene_0}
+              wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+            name: update_scene_0
+            node_type: CONDITION
+            plugin_name: Update Scene
+        - children: []
+          name: move_to_waypoint_1
+          save_info:
+            generator_info:
+              acc: {value: 0.75}
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: move_to_waypoint_1}
+              vel: {value: 0.75}
+              waypoint_name: {value: '001'}
+            name: move_to_waypoint_1
+            node_type: ACTION
+            plugin_name: Move to Waypoint
         name: sequence_6
-        node_type: LOGIC
-        plugin_name: Sequence
-    - children:
-      - children: []
-        name: smart_move_3
-        save_info:
-          generator_info:
-            acc: {value: 0.75}
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: smart_move_3}
-            object: {value: node_uniform}
-            reference: {value: world}
-            region: {value: right_of}
-            smartmove: {value: node-over}
-            vel: {value: 0.75}
-          name: smart_move_3
-          node_type: ACTION
-          plugin_name: Smart Move
-      - children: []
-        name: smart_move_4
-        save_info:
-          generator_info:
-            acc: {value: 0.75}
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: smart_move_4}
-            object: {value: node_uniform}
-            reference: {value: world}
-            region: {value: right_of}
-            smartmove: {value: node-pick}
-            vel: {value: 0.75}
-          name: smart_move_4
-          node_type: ACTION
-          plugin_name: Smart Move
-      - children: []
-        name: close_s_gripper_1
         save_info:
           generator_info:
             label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: close_s_gripper_1}
-            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
-          name: close_s_gripper_1
-          node_type: ACTION
-          plugin_name: Close S Gripper
-      name: sequence_7
-      save_info:
-        generator_info:
-          label: {field_name: Label, type: NamedField, value: pick up node}
-          name: {field_name: Name, type: NamedField, value: sequence_7}
+            name: {field_name: Name, type: NamedField, value: sequence_6}
+          name: sequence_6
+          node_type: LOGIC
+          plugin_name: Sequence
+      - children:
+        - children: []
+          name: smart_move_0
+          save_info:
+            generator_info:
+              acc: {value: 0.75}
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: smart_move_0}
+              object: {value: node_uniform}
+              reference: {value: world}
+              region: {value: right_of}
+              smartmove: {value: node-over}
+              vel: {value: 0.75}
+            name: smart_move_0
+            node_type: ACTION
+            plugin_name: Smart Move
+        - children: []
+          name: smart_move_1
+          save_info:
+            generator_info:
+              acc: {value: 0.75}
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: smart_move_1}
+              object: {value: node_uniform}
+              reference: {value: world}
+              region: {value: right_of}
+              smartmove: {value: node-pick-v2}
+              vel: {value: 0.75}
+            name: smart_move_1
+            node_type: ACTION
+            plugin_name: Smart Move
+        - children: []
+          name: close_s_gripper_0
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: close_s_gripper_0}
+              wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+            name: close_s_gripper_0
+            node_type: ACTION
+            plugin_name: Close S Gripper
+        - children: []
+          name: smart_move_2
+          save_info:
+            generator_info:
+              acc: {value: 0.75}
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: smart_move_2}
+              object: {value: node_uniform}
+              reference: {value: world}
+              region: {value: right_of}
+              smartmove: {value: node-over}
+              vel: {value: 0.75}
+            name: smart_move_2
+            node_type: ACTION
+            plugin_name: Smart Move
         name: sequence_7
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sequence_7}
+          name: sequence_7
+          node_type: LOGIC
+          plugin_name: Sequence
+      - children:
+        - children: []
+          name: move_to_waypoint_2
+          save_info:
+            generator_info:
+              acc: {value: 0.75}
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: move_to_waypoint_2}
+              vel: {value: 0.75}
+              waypoint_name: {value: 01 place1}
+            name: move_to_waypoint_2
+            node_type: ACTION
+            plugin_name: Move to Waypoint
+        - children: []
+          name: move_to_waypoint_3
+          save_info:
+            generator_info:
+              acc: {value: 0.75}
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: move_to_waypoint_3}
+              vel: {value: 0.75}
+              waypoint_name: {value: 01 place2}
+            name: move_to_waypoint_3
+            node_type: ACTION
+            plugin_name: Move to Waypoint
+        - children: []
+          name: open_s_gripper_1
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: open_s_gripper_1}
+              wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+            name: open_s_gripper_1
+            node_type: ACTION
+            plugin_name: Open S Gripper
+        - children: []
+          name: move_to_waypoint_4
+          save_info:
+            generator_info:
+              acc: {value: 0.75}
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: move_to_waypoint_4}
+              vel: {value: 0.75}
+              waypoint_name: {value: 01 place1}
+            name: move_to_waypoint_4
+            node_type: ACTION
+            plugin_name: Move to Waypoint
+        name: sequence_8
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sequence_8}
+          name: sequence_8
+          node_type: LOGIC
+          plugin_name: Sequence
+      name: sequence_5
+      save_info:
+        generator_info:
+          label: {field_name: Label, type: NamedField, value: node pick and place}
+          name: {field_name: Name, type: NamedField, value: sequence_5}
+        name: sequence_5
         node_type: LOGIC
         plugin_name: Sequence
     - children:
-      - children: []
-        name: smart_move_5
-        save_info:
-          generator_info:
-            acc: {value: 0.75}
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: smart_move_5}
-            object: {value: node_uniform}
-            reference: {value: world}
-            region: {value: right_of}
-            smartmove: {value: node-over}
-            vel: {value: 0.75}
-          name: smart_move_5
-          node_type: ACTION
-          plugin_name: Smart Move
-      - children: []
-        name: move_to_waypoint_6
-        save_info:
-          generator_info:
-            acc: {value: 0.75}
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: move_to_waypoint_6}
-            vel: {value: 0.75}
-            waypoint_name: {value: 02 place1}
+      - children:
+        - children: []
           name: move_to_waypoint_6
-          node_type: ACTION
-          plugin_name: Move to Waypoint
-      - children: []
-        name: move_to_waypoint_7
-        save_info:
-          generator_info:
-            acc: {value: 0.75}
-            label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: move_to_waypoint_7}
-            vel: {value: 0.75}
-            waypoint_name: {value: 02 place2}
+          save_info:
+            generator_info:
+              acc: {value: 0.75}
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: move_to_waypoint_6}
+              vel: {value: 0.75}
+              waypoint_name: {value: 00 HOME}
+            name: move_to_waypoint_6
+            node_type: ACTION
+            plugin_name: Move to Waypoint
+        - children: []
+          name: detect_objects_2
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: detect_objects_2}
+              wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+            name: detect_objects_2
+            node_type: CONDITION
+            plugin_name: Detect Objects
+        - children: []
+          name: update_scene_2
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: update_scene_2}
+              wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+            name: update_scene_2
+            node_type: CONDITION
+            plugin_name: Update Scene
+        - children: []
           name: move_to_waypoint_7
-          node_type: ACTION
-          plugin_name: Move to Waypoint
-      - children: []
-        name: open_s_gripper_1
+          save_info:
+            generator_info:
+              acc: {value: 0.75}
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: move_to_waypoint_7}
+              vel: {value: 0.75}
+              waypoint_name: {value: '001'}
+            name: move_to_waypoint_7
+            node_type: ACTION
+            plugin_name: Move to Waypoint
+        name: sequence_14
         save_info:
           generator_info:
             label: {field_name: Label, type: NamedField, value: ''}
-            name: {field_name: Name, type: NamedField, value: open_s_gripper_1}
-            wait_finish: {field_name: Wait, type: NamedField, value: '1'}
-          name: open_s_gripper_1
-          node_type: ACTION
-          plugin_name: Open S Gripper
-      name: sequence_8
+            name: {field_name: Name, type: NamedField, value: sequence_14}
+          name: sequence_14
+          node_type: LOGIC
+          plugin_name: Sequence
+      - children:
+        - children: []
+          name: smart_move_10
+          save_info:
+            generator_info:
+              acc: {value: 0.75}
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: smart_move_10}
+              object: {value: node_uniform}
+              reference: {value: world}
+              region: {value: right_of}
+              smartmove: {value: node-over}
+              vel: {value: 0.75}
+            name: smart_move_10
+            node_type: ACTION
+            plugin_name: Smart Move
+        - children: []
+          name: smart_move_11
+          save_info:
+            generator_info:
+              acc: {value: 0.75}
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: smart_move_11}
+              object: {value: node_uniform}
+              reference: {value: world}
+              region: {value: right_of}
+              smartmove: {value: node-pick-v2}
+              vel: {value: 0.75}
+            name: smart_move_11
+            node_type: ACTION
+            plugin_name: Smart Move
+        - children: []
+          name: close_s_gripper_2
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: close_s_gripper_2}
+              wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+            name: close_s_gripper_2
+            node_type: ACTION
+            plugin_name: Close S Gripper
+        - children: []
+          name: smart_move_12
+          save_info:
+            generator_info:
+              acc: {value: 0.75}
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: smart_move_12}
+              object: {value: node_uniform}
+              reference: {value: world}
+              region: {value: right_of}
+              smartmove: {value: node-over}
+              vel: {value: 0.75}
+            name: smart_move_12
+            node_type: ACTION
+            plugin_name: Smart Move
+        name: sequence_15
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sequence_15}
+          name: sequence_15
+          node_type: LOGIC
+          plugin_name: Sequence
+      - children:
+        - children: []
+          name: move_to_waypoint_10
+          save_info:
+            generator_info:
+              acc: {value: 0.75}
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: move_to_waypoint_10}
+              vel: {value: 0.75}
+              waypoint_name: {value: 02 place1}
+            name: move_to_waypoint_10
+            node_type: ACTION
+            plugin_name: Move to Waypoint
+        - children: []
+          name: move_to_waypoint_11
+          save_info:
+            generator_info:
+              acc: {value: 0.75}
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: move_to_waypoint_11}
+              vel: {value: 0.75}
+              waypoint_name: {value: 02 place2}
+            name: move_to_waypoint_11
+            node_type: ACTION
+            plugin_name: Move to Waypoint
+        - children: []
+          name: open_s_gripper_4
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: open_s_gripper_4}
+              wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+            name: open_s_gripper_4
+            node_type: ACTION
+            plugin_name: Open S Gripper
+        - children: []
+          name: move_to_waypoint_13
+          save_info:
+            generator_info:
+              acc: {value: 0.75}
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: move_to_waypoint_13}
+              vel: {value: 0.75}
+              waypoint_name: {value: 02 place1}
+            name: move_to_waypoint_13
+            node_type: ACTION
+            plugin_name: Move to Waypoint
+        - children: []
+          name: move_to_waypoint_14
+          save_info:
+            generator_info:
+              acc: {value: 0.75}
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: move_to_waypoint_14}
+              vel: {value: 0.75}
+              waypoint_name: {value: 00 HOME}
+            name: move_to_waypoint_14
+            node_type: ACTION
+            plugin_name: Move to Waypoint
+        name: sequence_16
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sequence_16}
+          name: sequence_16
+          node_type: LOGIC
+          plugin_name: Sequence
+      name: sequence_13
       save_info:
         generator_info:
-          label: {field_name: Label, type: NamedField, value: Place to position 02}
-          name: {field_name: Name, type: NamedField, value: sequence_8}
-        name: sequence_8
+          label: {field_name: Label, type: NamedField, value: node pick and assemble}
+          name: {field_name: Name, type: NamedField, value: sequence_13}
+        name: sequence_13
         node_type: LOGIC
         plugin_name: Sequence
-    name: sequence_5
+    name: sequence_4
     save_info:
       generator_info:
-        label: {field_name: Label, type: NamedField, value: Pickup second node}
-        name: {field_name: Name, type: NamedField, value: sequence_5}
-      name: sequence_5
+        label: {field_name: Label, type: NamedField, value: ''}
+        name: {field_name: Name, type: NamedField, value: sequence_4}
+      name: sequence_4
       node_type: LOGIC
       plugin_name: Sequence
-  - children:
-    - children: []
-      name: move_to_waypoint_8
-      save_info:
-        generator_info:
-          acc: {value: 0.75}
-          label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: move_to_waypoint_8}
-          vel: {value: 0.75}
-          waypoint_name: {value: 00 HOME}
-        name: move_to_waypoint_8
-        node_type: ACTION
-        plugin_name: Move to Waypoint
-    name: sequence_9
-    save_info:
-      generator_info:
-        label: {field_name: Label, type: NamedField, value: Reset}
-        name: {field_name: Name, type: NamedField, value: sequence_9}
-      name: sequence_9
-      node_type: LOGIC
-      plugin_name: Sequence
-  name: sequence_0
+  name: root
   save_info:
     generator_info:
       label: {field_name: Label, type: NamedField, value: ''}
-      name: {field_name: Name, type: NamedField, value: sequence_0}
-    name: sequence_0
+      name: {field_name: Name, type: NamedField, value: root}
+    name: root
     node_type: LOGIC
-    plugin_name: Sequence
+    plugin_name: Root

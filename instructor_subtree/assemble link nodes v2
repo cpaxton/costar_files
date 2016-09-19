@@ -25,7 +25,7 @@ tree:
               wait_finish: {field_name: Wait, type: NamedField, value: '1'}
             name: open_s_gripper_2
             node_type: ACTION
-            plugin_name: Open S Gripper
+            plugin_name: Open Gripper
         - children: []
           name: detect_objects_2
           save_info:
@@ -106,7 +106,7 @@ tree:
               wait_finish: {field_name: Wait, type: NamedField, value: '1'}
             name: close_s_gripper_2
             node_type: ACTION
-            plugin_name: Close S Gripper
+            plugin_name: Close Gripper
         - children: []
           name: smart_move_8
           save_info:
@@ -164,7 +164,7 @@ tree:
               wait_finish: {field_name: Wait, type: NamedField, value: '1'}
             name: open_s_gripper_3
             node_type: ACTION
-            plugin_name: Open S Gripper
+            plugin_name: Open Gripper
         - children: []
           name: move_to_waypoint_13
           save_info:
@@ -290,7 +290,7 @@ tree:
               wait_finish: {field_name: Wait, type: NamedField, value: '1'}
             name: close_s_gripper_3
             node_type: ACTION
-            plugin_name: Close S Gripper
+            plugin_name: Close Gripper
         - children: []
           name: smart_move_12
           save_info:
@@ -354,7 +354,7 @@ tree:
               wait_finish: {field_name: Wait, type: NamedField, value: '1'}
             name: open_s_gripper_4
             node_type: ACTION
-            plugin_name: Open S Gripper
+            plugin_name: Open Gripper
         - children: []
           name: smart_move_15
           save_info:
@@ -480,7 +480,7 @@ tree:
               wait_finish: {field_name: Wait, type: NamedField, value: '1'}
             name: close_s_gripper_4
             node_type: ACTION
-            plugin_name: Close S Gripper
+            plugin_name: Close Gripper
         - children: []
           name: smart_move_18
           save_info:
@@ -556,7 +556,7 @@ tree:
               wait_finish: {field_name: Wait, type: NamedField, value: '1'}
             name: open_s_gripper_5
             node_type: ACTION
-            plugin_name: Open S Gripper
+            plugin_name: Open Gripper
         - children: []
           name: smart_move_21
           save_info:
