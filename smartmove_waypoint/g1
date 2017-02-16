@@ -1,7 +1,0 @@
-- !!python/object/new:geometry_msgs.msg._Pose.Pose
-  state:
-  - !!python/object/new:geometry_msgs.msg._Point.Point
-    state: [-0.18426323639387882, -0.020192132616216885, 0.060617341257134916]
-  - !!python/object/new:geometry_msgs.msg._Quaternion.Quaternion
-    state: [0.7866308645859637, 0.07081292472028554, -0.05756573074783168, 0.6106419566462551]
-- sander_makita
