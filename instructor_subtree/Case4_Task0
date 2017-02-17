@@ -1,0 +1,84 @@
+name: Case4_Task0
+tree:
+  children:
+  - children:
+    - children: []
+      name: plan_to_waypoint_0
+      save_info:
+        generator_info:
+          acc: {value: 0.75}
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: plan_to_waypoint_0}
+          vel: {value: 0.75}
+          waypoint_name: {value: 00 Home}
+        name: plan_to_waypoint_0
+        node_type: ACTION
+        plugin_name: Plan to Waypoint
+    - children: []
+      name: open_gripper_0
+      save_info:
+        generator_info:
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: open_gripper_0}
+          wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+        name: open_gripper_0
+        node_type: ACTION
+        plugin_name: Open Gripper
+    - children: []
+      name: detect_objects_0
+      save_info:
+        generator_info:
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: detect_objects_0}
+          wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+        name: detect_objects_0
+        node_type: CONDITION
+        plugin_name: Detect Objects
+    - children: []
+      name: smart_grasp_1
+      save_info:
+        generator_info:
+          acc: {value: 0.75}
+          backoff: {value: 0.05}
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: smart_grasp_1}
+          object: {value: node_uniform}
+          reference: {value: world}
+          region: {value: right_of}
+          smartmove: {value: C4 pick}
+          vel: {value: 0.75}
+        name: smart_grasp_1
+        node_type: ACTION
+        plugin_name: Smart Grasp
+    - children: []
+      name: smart_release_0
+      save_info:
+        generator_info:
+          acc: {value: 0.75}
+          backoff: {value: 0.073}
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: smart_release_0}
+          object: {value: table}
+          reference: {value: world}
+          region: {value: in_front_of}
+          smartmove: {value: C4 place table}
+          vel: {value: 0.75}
+        name: smart_release_0
+        node_type: ACTION
+        plugin_name: Smart Release
+    name: sequence_0
+    save_info:
+      generator_info:
+        label: {field_name: Label, type: NamedField, value: ''}
+        name: {field_name: Name, type: NamedField, value: sequence_0}
+      name: sequence_0
+      node_type: LOGIC
+      plugin_name: Sequence
+  name: root
+  save_info:
+    generator_info:
+      label: {field_name: Label, type: NamedField, value: ''}
+      name: {field_name: Name, type: NamedField, value: root}
+    name: root
+    node_type: LOGIC
+    plugin_name: Root
