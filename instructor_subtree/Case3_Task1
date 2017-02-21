@@ -3,162 +3,48 @@ tree:
   children:
   - children:
     - children: []
-      name: move_to_waypoint_9
+      name: move_to_home_3
       save_info:
         generator_info:
           acc: {value: 0.75}
           label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: move_to_waypoint_9}
+          name: {field_name: Name, type: NamedField, value: move_to_home_3}
           vel: {value: 0.75}
-          waypoint_name: {value: 00 Home}
-        name: move_to_waypoint_9
+        name: move_to_home_3
         node_type: ACTION
-        plugin_name: Move to Waypoint
+        plugin_name: Move to Home
     - children: []
-      name: detect_objects_3
+      name: detect_objects_2
       save_info:
         generator_info:
           label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: detect_objects_3}
+          name: {field_name: Name, type: NamedField, value: detect_objects_2}
           wait_finish: {field_name: Wait, type: NamedField, value: '1'}
-        name: detect_objects_3
+        name: detect_objects_2
         node_type: CONDITION
         plugin_name: Detect Objects
     - children: []
-      name: move_relative_7
+      name: move_relative_3
       save_info:
         generator_info:
           acc: {value: 0.75}
           label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: move_relative_7}
+          name: {field_name: Name, type: NamedField, value: move_relative_3}
           vel: {value: 0.75}
           waypoint_name: {value: C3 01 Over}
-        name: move_relative_7
+        name: move_relative_3
         node_type: ACTION
         plugin_name: Move Relative
     - children: []
-      name: move_relative_8
+      name: move_relative_4
       save_info:
         generator_info:
           acc: {value: 0.75}
           label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: move_relative_8}
+          name: {field_name: Name, type: NamedField, value: move_relative_4}
           vel: {value: 0.75}
           waypoint_name: {value: C3 02 Pick}
-        name: move_relative_8
-        node_type: ACTION
-        plugin_name: Move Relative
-    - children: []
-      name: close_gripper_2
-      save_info:
-        generator_info:
-          label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: close_gripper_2}
-          wait_finish: {field_name: Wait, type: NamedField, value: '1'}
-        name: close_gripper_2
-        node_type: ACTION
-        plugin_name: Close Gripper
-    - children: []
-      name: move_relative_9
-      save_info:
-        generator_info:
-          acc: {value: 0.75}
-          label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: move_relative_9}
-          vel: {value: 0.75}
-          waypoint_name: {value: C3 01 Over}
-        name: move_relative_9
-        node_type: ACTION
-        plugin_name: Move Relative
-    - children: []
-      name: move_to_waypoint_10
-      save_info:
-        generator_info:
-          acc: {value: 0.75}
-          label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: move_to_waypoint_10}
-          vel: {value: 0.75}
-          waypoint_name: {value: C1 03 Lift}
-        name: move_to_waypoint_10
-        node_type: ACTION
-        plugin_name: Move to Waypoint
-    - children: []
-      name: move_to_waypoint_11
-      save_info:
-        generator_info:
-          acc: {value: 0.75}
-          label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: move_to_waypoint_11}
-          vel: {value: 0.75}
-          waypoint_name: {value: C1 04 Place}
-        name: move_to_waypoint_11
-        node_type: ACTION
-        plugin_name: Move to Waypoint
-    - children: []
-      name: open_gripper_2
-      save_info:
-        generator_info:
-          label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: open_gripper_2}
-          wait_finish: {field_name: Wait, type: NamedField, value: '1'}
-        name: open_gripper_2
-        node_type: ACTION
-        plugin_name: Open Gripper
-    - children: []
-      name: move_to_waypoint_12
-      save_info:
-        generator_info:
-          acc: {value: 0.75}
-          label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: move_to_waypoint_12}
-          vel: {value: 0.75}
-          waypoint_name: {value: C1 05 Escape}
-        name: move_to_waypoint_12
-        node_type: ACTION
-        plugin_name: Move to Waypoint
-    - children: []
-      name: move_to_waypoint_13
-      save_info:
-        generator_info:
-          acc: {value: 0.75}
-          label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: move_to_waypoint_13}
-          vel: {value: 0.75}
-          waypoint_name: {value: 00 Home}
-        name: move_to_waypoint_13
-        node_type: ACTION
-        plugin_name: Move to Waypoint
-    name: sequence_4
-    save_info:
-      generator_info:
-        label: {field_name: Label, type: NamedField, value: ''}
-        name: {field_name: Name, type: NamedField, value: sequence_4}
-      name: sequence_4
-      node_type: LOGIC
-      plugin_name: Sequence
-  - children:
-    - children: []
-      name: move_relative_10
-      save_info:
-        generator_info:
-          acc: {value: 0.75}
-          label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: move_relative_10}
-          vel: {value: 0.75}
-          waypoint_name: {value: C3 03 Over}
-        name: move_relative_10
-        node_type: ACTION
-        plugin_name: Move Relative
-    - children: []
-      name: move_relative_11
-      save_info:
-        generator_info:
-          acc: {value: 0.75}
-          label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: move_relative_11}
-          vel: {value: 0.75}
-          waypoint_name: {value: C3 04 Pick}
-        name: move_relative_11
+        name: move_relative_4
         node_type: ACTION
         plugin_name: Move Relative
     - children: []
@@ -172,27 +58,39 @@ tree:
         node_type: ACTION
         plugin_name: Close Gripper
     - children: []
-      name: move_to_waypoint_14
+      name: move_relative_5
       save_info:
         generator_info:
           acc: {value: 0.75}
           label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: move_to_waypoint_14}
+          name: {field_name: Name, type: NamedField, value: move_relative_5}
           vel: {value: 0.75}
-          waypoint_name: {value: C1 24 Over}
-        name: move_to_waypoint_14
+          waypoint_name: {value: C3 01 Over}
+        name: move_relative_5
+        node_type: ACTION
+        plugin_name: Move Relative
+    - children: []
+      name: move_to_waypoint_6
+      save_info:
+        generator_info:
+          acc: {value: 0.75}
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: move_to_waypoint_6}
+          vel: {value: 0.75}
+          waypoint_name: {value: C1 03 Lift}
+        name: move_to_waypoint_6
         node_type: ACTION
         plugin_name: Move to Waypoint
     - children: []
-      name: move_to_waypoint_15
+      name: move_to_waypoint_7
       save_info:
         generator_info:
           acc: {value: 0.75}
           label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: move_to_waypoint_15}
+          name: {field_name: Name, type: NamedField, value: move_to_waypoint_7}
           vel: {value: 0.75}
-          waypoint_name: {value: C1 25 Place}
-        name: move_to_waypoint_15
+          waypoint_name: {value: C1 04 Place}
+        name: move_to_waypoint_7
         node_type: ACTION
         plugin_name: Move to Waypoint
     - children: []
@@ -206,29 +104,28 @@ tree:
         node_type: ACTION
         plugin_name: Open Gripper
     - children: []
-      name: move_to_waypoint_16
+      name: move_to_waypoint_8
       save_info:
         generator_info:
           acc: {value: 0.75}
           label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: move_to_waypoint_16}
+          name: {field_name: Name, type: NamedField, value: move_to_waypoint_8}
           vel: {value: 0.75}
-          waypoint_name: {value: C1 24 Over}
-        name: move_to_waypoint_16
+          waypoint_name: {value: C1 05 Escape}
+        name: move_to_waypoint_8
         node_type: ACTION
         plugin_name: Move to Waypoint
     - children: []
-      name: move_to_waypoint_17
+      name: move_to_home_5
       save_info:
         generator_info:
           acc: {value: 0.75}
           label: {field_name: Label, type: NamedField, value: ''}
-          name: {field_name: Name, type: NamedField, value: move_to_waypoint_17}
+          name: {field_name: Name, type: NamedField, value: move_to_home_5}
           vel: {value: 0.75}
-          waypoint_name: {value: 00 Home}
-        name: move_to_waypoint_17
+        name: move_to_home_5
         node_type: ACTION
-        plugin_name: Move to Waypoint
+        plugin_name: Move to Home
     name: sequence_5
     save_info:
       generator_info:
@@ -237,11 +134,111 @@ tree:
       name: sequence_5
       node_type: LOGIC
       plugin_name: Sequence
-  name: sequence_2
+  - children:
+    - children: []
+      name: move_relative_6
+      save_info:
+        generator_info:
+          acc: {value: 0.75}
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: move_relative_6}
+          vel: {value: 0.75}
+          waypoint_name: {value: C3 03 Over}
+        name: move_relative_6
+        node_type: ACTION
+        plugin_name: Move Relative
+    - children: []
+      name: move_relative_7
+      save_info:
+        generator_info:
+          acc: {value: 0.75}
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: move_relative_7}
+          vel: {value: 0.75}
+          waypoint_name: {value: C3 04 Pick}
+        name: move_relative_7
+        node_type: ACTION
+        plugin_name: Move Relative
+    - children: []
+      name: close_gripper_4
+      save_info:
+        generator_info:
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: close_gripper_4}
+          wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+        name: close_gripper_4
+        node_type: ACTION
+        plugin_name: Close Gripper
+    - children: []
+      name: move_to_waypoint_10
+      save_info:
+        generator_info:
+          acc: {value: 0.75}
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: move_to_waypoint_10}
+          vel: {value: 0.75}
+          waypoint_name: {value: C1 24 Over}
+        name: move_to_waypoint_10
+        node_type: ACTION
+        plugin_name: Move to Waypoint
+    - children: []
+      name: move_to_waypoint_11
+      save_info:
+        generator_info:
+          acc: {value: 0.75}
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: move_to_waypoint_11}
+          vel: {value: 0.75}
+          waypoint_name: {value: C1 25 Place}
+        name: move_to_waypoint_11
+        node_type: ACTION
+        plugin_name: Move to Waypoint
+    - children: []
+      name: open_gripper_4
+      save_info:
+        generator_info:
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: open_gripper_4}
+          wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+        name: open_gripper_4
+        node_type: ACTION
+        plugin_name: Open Gripper
+    - children: []
+      name: move_to_waypoint_12
+      save_info:
+        generator_info:
+          acc: {value: 0.75}
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: move_to_waypoint_12}
+          vel: {value: 0.75}
+          waypoint_name: {value: C1 24 Over}
+        name: move_to_waypoint_12
+        node_type: ACTION
+        plugin_name: Move to Waypoint
+    - children: []
+      name: move_to_home_4
+      save_info:
+        generator_info:
+          acc: {value: 0.75}
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: move_to_home_4}
+          vel: {value: 0.75}
+        name: move_to_home_4
+        node_type: ACTION
+        plugin_name: Move to Home
+    name: sequence_6
+    save_info:
+      generator_info:
+        label: {field_name: Label, type: NamedField, value: ''}
+        name: {field_name: Name, type: NamedField, value: sequence_6}
+      name: sequence_6
+      node_type: LOGIC
+      plugin_name: Sequence
+  name: sequence_4
   save_info:
     generator_info:
       label: {field_name: Label, type: NamedField, value: ''}
-      name: {field_name: Name, type: NamedField, value: sequence_2}
-    name: sequence_2
+      name: {field_name: Name, type: NamedField, value: sequence_4}
+    name: sequence_4
     node_type: LOGIC
     plugin_name: Sequence
