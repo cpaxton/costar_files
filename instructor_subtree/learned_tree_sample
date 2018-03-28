@@ -1,0 +1,174 @@
+name: learned_tree_sample
+tree:
+  children:
+  - children:
+    - children:
+      - children: []
+        name: dummy_condition_0
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: 'All [learned_actions]
+                \nis_done == TRUE'}
+            name: {field_name: Name, type: NamedField, value: dummy_condition_0}
+          name: dummy_condition_0
+          node_type: CONDITION
+          plugin_name: Dummy Condition
+      - children:
+        - children: []
+          name: open_gripper_0
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: open_gripper_0}
+              wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+            name: open_gripper_0
+            node_type: ACTION
+            plugin_name: Open Gripper
+        - children:
+          - children: []
+            name: dummy_condition_1
+            save_info:
+              generator_info:
+                label: {field_name: Label, type: NamedField, value: '[GRASP_POSITION]
+                    \nis_success == TRUE'}
+                name: {field_name: Name, type: NamedField, value: dummy_condition_1}
+              name: dummy_condition_1
+              node_type: CONDITION
+              plugin_name: Dummy Condition
+          - children: []
+            name: dummy_robot_action_0
+            save_info:
+              generator_info:
+                label: {field_name: Label, type: NamedField, value: 'Learned Action:
+                    Move to GRASP'}
+                name: {field_name: Name, type: NamedField, value: dummy_robot_action_0}
+              name: dummy_robot_action_0
+              node_type: TASK
+              plugin_name: Dummy Robot Action
+          name: repeat_until_1
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: repeat_until_1}
+            name: repeat_until_1
+            node_type: LOGIC
+            plugin_name: Repeat until
+        - children: []
+          name: close_gripper_0
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: close_gripper_0}
+              wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+            name: close_gripper_0
+            node_type: ACTION
+            plugin_name: Close Gripper
+        - children:
+          - children:
+            - children: []
+              name: dummy_condition_3
+              save_info:
+                generator_info:
+                  label: {field_name: Label, type: NamedField, value: '[ADD_STACK_POSITION]
+                      \nis_success == TRUE'}
+                  name: {field_name: Name, type: NamedField, value: dummy_condition_3}
+                name: dummy_condition_3
+                node_type: CONDITION
+                plugin_name: Dummy Condition
+            - children: []
+              name: dummy_robot_action_2
+              save_info:
+                generator_info:
+                  label: {field_name: Label, type: NamedField, value: 'Learned Action:
+                      Move to [above]\n<free> OBJECT'}
+                  name: {field_name: Name, type: NamedField, value: dummy_robot_action_2}
+                name: dummy_robot_action_2
+                node_type: TASK
+                plugin_name: Dummy Robot Action
+            name: repeat_until_3
+            save_info:
+              generator_info:
+                label: {field_name: Label, type: NamedField, value: ''}
+                name: {field_name: Name, type: NamedField, value: repeat_until_3}
+              name: repeat_until_3
+              node_type: LOGIC
+              plugin_name: Repeat until
+          - children:
+            - children: []
+              name: dummy_condition_11
+              save_info:
+                generator_info:
+                  label: {field_name: Label, type: NamedField, value: '[ADD_STACK_POSITION]
+                      \nis_success == TRUE'}
+                  name: {field_name: Name, type: NamedField, value: dummy_condition_11}
+                name: dummy_condition_11
+                node_type: CONDITION
+                plugin_name: Dummy Condition
+            - children: []
+              name: dummy_robot_action_8
+              save_info:
+                generator_info:
+                  label: {field_name: Label, type: NamedField, value: 'Learned Action:
+                      Move to [above]\n<top,not_N_stacked> OBJECT'}
+                  name: {field_name: Name, type: NamedField, value: dummy_robot_action_8}
+                name: dummy_robot_action_8
+                node_type: TASK
+                plugin_name: Dummy Robot Action
+            name: repeat_until_12
+            save_info:
+              generator_info:
+                label: {field_name: Label, type: NamedField, value: ''}
+                name: {field_name: Name, type: NamedField, value: repeat_until_12}
+              name: repeat_until_12
+              node_type: LOGIC
+              plugin_name: Repeat until
+          name: learned_sequence_2
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ' (?)'}
+              name: {field_name: Name, type: NamedField, value: learned_sequence_2}
+            name: learned_sequence_2
+            node_type: LOGIC
+            plugin_name: Learned Sequence
+        - children: []
+          name: open_gripper_1
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: open_gripper_1}
+              wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+            name: open_gripper_1
+            node_type: ACTION
+            plugin_name: Open Gripper
+        name: sequence_0
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sequence_0}
+          name: sequence_0
+          node_type: LOGIC
+          plugin_name: Sequence
+      name: repeat_until_0
+      save_info:
+        generator_info:
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: repeat_until_0}
+        name: repeat_until_0
+        node_type: LOGIC
+        plugin_name: Repeat until
+    name: learned_sequence_0
+    save_info:
+      generator_info:
+        label: {field_name: Label, type: NamedField, value: ' ->'}
+        name: {field_name: Name, type: NamedField, value: learned_sequence_0}
+      name: learned_sequence_0
+      node_type: LOGIC
+      plugin_name: Learned Sequence
+  name: root
+  save_info:
+    generator_info:
+      label: {field_name: Label, type: NamedField, value: ''}
+      name: {field_name: Name, type: NamedField, value: root}
+    name: root
+    node_type: LOGIC
+    plugin_name: Root

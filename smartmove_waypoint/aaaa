@@ -1,0 +1,7 @@
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/object/new:geometry_msgs.msg._Point.Point
+    state: [-0.22001116007522364, -0.020000000000000004, -0.009999999999999998]
+  - !!python/object/new:geometry_msgs.msg._Quaternion.Quaternion
+    state: [1.0, 0.0, 0.0, 6.123233995736766e-17]
+- red_cube

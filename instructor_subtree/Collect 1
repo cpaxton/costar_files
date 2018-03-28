@@ -1,0 +1,310 @@
+name: Collect 1
+tree:
+  children:
+  - children:
+    - children: []
+      name: plan_to_home_3
+      save_info:
+        generator_info:
+          acc: {value: 0.5}
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: plan_to_home_3}
+          vel: {value: 0.5}
+        name: plan_to_home_3
+        node_type: TASK
+        plugin_name: Plan to Home
+    - children:
+      - children:
+        - children:
+          - children: []
+            name: plan_to_home_0
+            save_info:
+              generator_info:
+                acc: {value: 0.5}
+                label: {field_name: Label, type: NamedField, value: ''}
+                name: {field_name: Name, type: NamedField, value: plan_to_home_0}
+                vel: {value: 0.5}
+              name: plan_to_home_0
+              node_type: TASK
+              plugin_name: Plan to Home
+          - children: []
+            name: detect_objects_0
+            save_info:
+              generator_info:
+                label: {field_name: Label, type: NamedField, value: ''}
+                name: {field_name: Name, type: NamedField, value: detect_objects_0}
+                wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+              name: detect_objects_0
+              node_type: CONDITION
+              plugin_name: Detect Objects
+          - children: []
+            name: wait_for_message_0
+            save_info:
+              generator_info:
+                label: {field_name: Label, type: NamedField, value: /sequential_scene_parsing/done_hypothesis_msg}
+                name: {field_name: Name, type: NamedField, value: wait_for_message_0}
+                wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+              name: wait_for_message_0
+              node_type: CONDITION
+              plugin_name: Wait For Message
+          - children: []
+            name: publish_message_0
+            save_info:
+              generator_info:
+                label: {field_name: Label, type: NamedField, value: ''}
+                message_contents: {field_name: message, type: NamedField, value: start
+                    grasp}
+                message_topic: {field_name: Rostopic, type: NamedField, value: info}
+                name: {field_name: Name, type: NamedField, value: publish_message_0}
+                wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+              name: publish_message_0
+              node_type: CONDITION
+              plugin_name: Publish Message
+          - children: []
+            name: open_gripper_0
+            save_info:
+              generator_info:
+                label: {field_name: Label, type: NamedField, value: ''}
+                name: {field_name: Name, type: NamedField, value: open_gripper_0}
+                wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+              name: open_gripper_0
+              node_type: ACTION
+              plugin_name: Open Gripper
+          name: sequence_2
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: sequence_2}
+            name: sequence_2
+            node_type: LOGIC
+            plugin_name: Sequence
+        - children:
+          - children: []
+            name: smart_grasp_0
+            save_info:
+              generator_info:
+                acc: {value: 0.75}
+                backoff: {value: 0.05}
+                label: {field_name: Label, type: NamedField, value: ''}
+                name: {field_name: Name, type: NamedField, value: smart_grasp_0}
+                object: {value: wood_cube}
+                predicates:
+                  value: !!set {is_free_object: null}
+                reference: {value: world}
+                region: {value: in_front_of}
+                smartmove: {value: grasp_sp}
+                vel: {value: 0.75}
+              name: smart_grasp_0
+              node_type: TASK
+              plugin_name: Smart Grasp
+          - children: []
+            name: publish_message_1
+            save_info:
+              generator_info:
+                label: {field_name: Label, type: NamedField, value: ''}
+                message_contents: {field_name: message, type: NamedField, value: stop}
+                message_topic: {field_name: Rostopic, type: NamedField, value: info}
+                name: {field_name: Name, type: NamedField, value: publish_message_1}
+                wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+              name: publish_message_1
+              node_type: CONDITION
+              plugin_name: Publish Message
+          - children:
+            - children: []
+              name: plan_to_home_1
+              save_info:
+                generator_info:
+                  acc: {value: 0.5}
+                  label: {field_name: Label, type: NamedField, value: ''}
+                  name: {field_name: Name, type: NamedField, value: plan_to_home_1}
+                  vel: {value: 0.5}
+                name: plan_to_home_1
+                node_type: TASK
+                plugin_name: Plan to Home
+            - children: []
+              name: detect_objects_1
+              save_info:
+                generator_info:
+                  label: {field_name: Label, type: NamedField, value: ''}
+                  name: {field_name: Name, type: NamedField, value: detect_objects_1}
+                  wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+                name: detect_objects_1
+                node_type: CONDITION
+                plugin_name: Detect Objects
+            - children: []
+              name: wait_for_message_1
+              save_info:
+                generator_info:
+                  label: {field_name: Label, type: NamedField, value: /sequential_scene_parsing/done_hypothesis_msg}
+                  name: {field_name: Name, type: NamedField, value: wait_for_message_1}
+                  wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+                name: wait_for_message_1
+                node_type: CONDITION
+                plugin_name: Wait For Message
+            name: sequence_4
+            save_info:
+              generator_info:
+                label: {field_name: Label, type: NamedField, value: ''}
+                name: {field_name: Name, type: NamedField, value: sequence_4}
+              name: sequence_4
+              node_type: LOGIC
+              plugin_name: Sequence
+          - children: []
+            name: publish_message_2
+            save_info:
+              generator_info:
+                label: {field_name: Label, type: NamedField, value: ''}
+                message_contents: {field_name: message, type: NamedField, value: start
+                    place}
+                message_topic: {field_name: Rostopic, type: NamedField, value: info}
+                name: {field_name: Name, type: NamedField, value: publish_message_2}
+                wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+              name: publish_message_2
+              node_type: CONDITION
+              plugin_name: Publish Message
+          - children:
+            - children: []
+              name: smart_release_0
+              save_info:
+                generator_info:
+                  acc: {value: 0.75}
+                  backoff: {value: 0.05}
+                  label: {field_name: Label, type: NamedField, value: ''}
+                  name: {field_name: Name, type: NamedField, value: smart_release_0}
+                  object: {value: wood_cube}
+                  predicates:
+                    value: !!set {is_not_N_stack_high: null, is_top_structure: null}
+                  reference: {value: world}
+                  region: {value: in_front_of}
+                  smartmove: {value: place_sp}
+                  vel: {value: 0.75}
+                name: smart_release_0
+                node_type: TASK
+                plugin_name: Smart Release
+            - children: []
+              name: smart_release_1
+              save_info:
+                generator_info:
+                  acc: {value: 0.75}
+                  backoff: {value: 0.05}
+                  label: {field_name: Label, type: NamedField, value: ''}
+                  name: {field_name: Name, type: NamedField, value: smart_release_1}
+                  object: {value: wood_cube}
+                  predicates:
+                    value: !!set {is_free_object: null}
+                  reference: {value: world}
+                  region: {value: in_front_of}
+                  smartmove: {value: place_sp}
+                  vel: {value: 0.75}
+                name: smart_release_1
+                node_type: TASK
+                plugin_name: Smart Release
+            name: selector_0
+            save_info:
+              generator_info:
+                label: {field_name: Label, type: NamedField, value: ''}
+                name: {field_name: Name, type: NamedField, value: selector_0}
+              name: selector_0
+              node_type: LOGIC
+              plugin_name: Selector
+          - children: []
+            name: publish_message_3
+            save_info:
+              generator_info:
+                label: {field_name: Label, type: NamedField, value: ''}
+                message_contents: {field_name: message, type: NamedField, value: stop}
+                message_topic: {field_name: Rostopic, type: NamedField, value: info}
+                name: {field_name: Name, type: NamedField, value: publish_message_3}
+                wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+              name: publish_message_3
+              node_type: CONDITION
+              plugin_name: Publish Message
+          - children: []
+            name: publish_message_4
+            save_info:
+              generator_info:
+                label: {field_name: Label, type: NamedField, value: start home}
+                message_contents: {field_name: message, type: NamedField, value: start
+                    home}
+                message_topic: {field_name: Rostopic, type: NamedField, value: info}
+                name: {field_name: Name, type: NamedField, value: publish_message_4}
+                wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+              name: publish_message_4
+              node_type: CONDITION
+              plugin_name: Publish Message
+          - children: []
+            name: plan_to_home_2
+            save_info:
+              generator_info:
+                acc: {value: 0.5}
+                label: {field_name: Label, type: NamedField, value: ''}
+                name: {field_name: Name, type: NamedField, value: plan_to_home_2}
+                vel: {value: 0.5}
+              name: plan_to_home_2
+              node_type: TASK
+              plugin_name: Plan to Home
+          - children: []
+            name: publish_message_5
+            save_info:
+              generator_info:
+                label: {field_name: Label, type: NamedField, value: ''}
+                message_contents: {field_name: message, type: NamedField, value: stop}
+                message_topic: {field_name: Rostopic, type: NamedField, value: info}
+                name: {field_name: Name, type: NamedField, value: publish_message_5}
+                wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+              name: publish_message_5
+              node_type: CONDITION
+              plugin_name: Publish Message
+          - children: []
+            name: publish_message_6
+            save_info:
+              generator_info:
+                label: {field_name: Label, type: NamedField, value: ''}
+                message_contents: {field_name: message, type: NamedField, value: save}
+                message_topic: {field_name: Rostopic, type: NamedField, value: info}
+                name: {field_name: Name, type: NamedField, value: publish_message_6}
+                wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+              name: publish_message_6
+              node_type: CONDITION
+              plugin_name: Publish Message
+          name: sequence_3
+          save_info:
+            generator_info:
+              label: {field_name: Label, type: NamedField, value: ''}
+              name: {field_name: Name, type: NamedField, value: sequence_3}
+            name: sequence_3
+            node_type: LOGIC
+            plugin_name: Sequence
+        name: sequence_1
+        save_info:
+          generator_info:
+            label: {field_name: Label, type: NamedField, value: ''}
+            name: {field_name: Name, type: NamedField, value: sequence_1}
+          name: sequence_1
+          node_type: LOGIC
+          plugin_name: Sequence
+      name: repeat_0
+      save_info:
+        generator_info:
+          label: {field_name: Label, type: NamedField, value: ''}
+          name: {field_name: Name, type: NamedField, value: repeat_0}
+          repeat: {field_name: Repeat (-1) for infinity, type: NamedField, value: '-1'}
+        name: repeat_0
+        node_type: LOGIC
+        plugin_name: Repeat
+    name: sequence_0
+    save_info:
+      generator_info:
+        label: {field_name: Label, type: NamedField, value: ''}
+        name: {field_name: Name, type: NamedField, value: sequence_0}
+      name: sequence_0
+      node_type: LOGIC
+      plugin_name: Sequence
+  name: root
+  save_info:
+    generator_info:
+      label: {field_name: Label, type: NamedField, value: ''}
+      name: {field_name: Name, type: NamedField, value: root}
+    name: root
+    node_type: LOGIC
+    plugin_name: Root

@@ -1,0 +1,7 @@
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/object/new:geometry_msgs.msg._Point.Point
+    state: [-0.1176590155691885, 0.04287809560795599, 0.1435890837505569]
+  - !!python/object/new:geometry_msgs.msg._Quaternion.Quaternion
+    state: [0.565493156848917, 0.2119397662556433, -0.3583863756623695, 0.7119397662556435]
+- wood_cube

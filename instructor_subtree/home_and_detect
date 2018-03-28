@@ -1,0 +1,52 @@
+name: home_and_detect
+tree:
+  children:
+  - children: []
+    name: plan_to_home_0
+    save_info:
+      generator_info:
+        acc: {value: 0.5}
+        label: {field_name: Label, type: NamedField, value: ''}
+        name: {field_name: Name, type: NamedField, value: plan_to_home_0}
+        vel: {value: 0.5}
+      name: plan_to_home_0
+      node_type: TASK
+      plugin_name: Plan to Home
+  - children: []
+    name: detect_objects_0
+    save_info:
+      generator_info:
+        label: {field_name: Label, type: NamedField, value: ''}
+        name: {field_name: Name, type: NamedField, value: detect_objects_0}
+        wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+      name: detect_objects_0
+      node_type: CONDITION
+      plugin_name: Detect Objects
+  - children: []
+    name: wait_for_message_0
+    save_info:
+      generator_info:
+        label: {field_name: Label, type: NamedField, value: /sequential_scene_parsing/done_hypothesis_msg}
+        name: {field_name: Name, type: NamedField, value: wait_for_message_0}
+        wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+      name: wait_for_message_0
+      node_type: CONDITION
+      plugin_name: Wait For Message
+  - children: []
+    name: open_gripper_0
+    save_info:
+      generator_info:
+        label: {field_name: Label, type: NamedField, value: ''}
+        name: {field_name: Name, type: NamedField, value: open_gripper_0}
+        wait_finish: {field_name: Wait, type: NamedField, value: '1'}
+      name: open_gripper_0
+      node_type: ACTION
+      plugin_name: Open Gripper
+  name: sequence_1
+  save_info:
+    generator_info:
+      label: {field_name: Label, type: NamedField, value: ''}
+      name: {field_name: Name, type: NamedField, value: sequence_1}
+    name: sequence_1
+    node_type: LOGIC
+    plugin_name: Sequence
